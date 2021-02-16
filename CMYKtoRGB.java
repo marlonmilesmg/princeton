@@ -1,13 +1,13 @@
 public class CMYKtoRGB {
     public static void main(String[] args) {
 
-        double c, m, y, k, white;
+        double white;
         int r, g, b;
 
-        c = StdIn.readDouble();
-        m = StdIn.readDouble();
-        y = StdIn.readDouble();
-        k = StdIn.readDouble();
+        double c = Double.parseDouble(args[0]);
+        double m = Double.parseDouble(args[1]);
+        double y = Double.parseDouble(args[2]);
+        double k = Double.parseDouble(args[3]);
 
         b = (int) (255 * (1 - y) * (1 - k));
         white = 1 - b;

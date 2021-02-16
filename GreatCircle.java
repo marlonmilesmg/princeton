@@ -1,13 +1,13 @@
 public class GreatCircle {
     public static void main(String[] args) {
-        double x1, y1, x2, y2, latRad, longRad, latRad1, longRad1;
+        double latRad, longRad, latRad1, longRad1;
         double a1, b1, a2, b2, c, d, distance;
         final double r = 6371.0;
 
-        x1 = StdIn.readDouble();
-        y1 = StdIn.readDouble();
-        x2 = StdIn.readDouble();
-        y2 = StdIn.readDouble();
+        double x1 = Double.parseDouble(args[0]);
+        double y1 = Double.parseDouble(args[1]);
+        double x2 = Double.parseDouble(args[2]);
+        double y2 = Double.parseDouble(args[3]);
 
         latRad = Math.toRadians(x1);
         longRad = Math.toRadians(y1);

@@ -1,11 +1,11 @@
 public class RightTriangle {
     public static void main(String[] args) {
 
-        int a, b, c, a2, b2, c2, m1, m2, m3;
+        int a2, b2, c2, m1, m2, m3;
 
-        a = StdIn.readInt();
-        b = StdIn.readInt();
-        c = StdIn.readInt();
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+        int c = Integer.parseInt(args[2]);
 
         a2 = (int) Math.pow(a, 2);
         b2 = (int) Math.pow(b, 2);
