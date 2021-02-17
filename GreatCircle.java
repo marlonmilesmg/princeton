@@ -25,6 +25,6 @@ public class GreatCircle {
 
         distance = (r * Math.acos(d)) + 0.5;
 
-        System.out.println(distance + " kilometers");
+        System.out.println(distance + " " + "kilometers");
     }
 }
