@@ -15,7 +15,7 @@ public class RightTriangle {
         e2 = (b * b) + (c * c);
         f2 = (a * a);
 
-        isRightTriangle = (a > 0 && b > 0 && c > 0 && a2 == b2 || c2 == d2 || e2 == f2);
+        isRightTriangle = (a > 0 && b > 0 && c > 0 && a2 == b2 && c2 == d2 && e2 == f2);
         System.out.println(isRightTriangle);
 
     }
