@@ -14,6 +14,8 @@ public class GreatCircle {
         latRad1 = Math.toRadians(x2);
         longRad1 = Math.toRadians(y2);
 
+        double result = 2*r*(Math.asin(Math.pow(Math.pow((Math.sin((latRad1-latRad)/2)), 2) + (Math.cos(latRad)*Math.cos(latRad1)*(Math.pow((Math.sin((longRad1-longRad)/2)), 2))), 0.5)));
+
         a1 = Math.sin(latRad);
         b1 = Math.cos(latRad);
         a2 = Math.sin(latRad1);
@@ -25,6 +27,6 @@ public class GreatCircle {
 
         distance = (r * Math.acos(d)) + 0.5;
 
-        System.out.println(distance + " " + "kilometers");
+        System.out.println(result + " " + "kilometers");
     }
 }
